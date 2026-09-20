@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Тихая гавань — ИИ-коуч и бережная поддержка</title>
+<meta name="description" content="ИИ-коуч для спокойного разговора: поможет разобраться в мыслях, решениях и состоянии.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Prata&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Тихая гавань</a>
+    <nav class="links" aria-label="Основное меню">
+      <a href="#about">О коуче</a>
+      <a href="#formats">С чем помогает</a>
+      <a href="#how">Как проходит</a>
+      <a href="#assistant">Разговор</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a class="btn" href="#assistant">Начать разговор</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Место, где можно выдохнуть и разобраться в себе</h1>
+        <p class="lead">ИИ-коуч рядом в любой момент: без записи, без оценок, в вашем темпе. Поможет спокойно подумать и найти небольшой шаг вперёд.</p>
+        <div class="actions">
+          <a class="btn" href="#assistant">Поговорить с коучем</a>
+          <a class="btn ghost" href="#how">Как это работает</a>
+        </div>
+      </div>
+      <div class="breath">
+        <div class="orb-stage">
+          <div class="orb-ring"></div>
+          <div class="orb" id="orb"></div>
+        </div>
+        <div class="breath-label" id="breathLabel" aria-live="polite">Минута тишины</div>
+        <button class="btn ghost" id="breathBtn" type="button">Подышать вместе</button>
+        <div class="breath-hint">Вдох 4 секунды, пауза 4, выдох 6. Так нервная система быстрее успокаивается.</div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about" class="band">
+    <div class="wrap about">
+      <div class="avatar" role="img" aria-label="Ваш ИИ-коуч">Ваш ИИ-коуч</div>
+      <div>
+        <h2>Знакомьтесь, ваш ИИ-коуч</h2>
+        <p style="margin-top:18px">Это программа, которая умеет слушать и задавать вопросы. Она помогает увидеть ситуацию со стороны, назвать то, что вы чувствуете, и выбрать маленький шаг, который можно сделать уже сегодня.</p>
+        <ul>
+          <li>Отвечает в любое время суток, без очереди и записи</li>
+          <li>Не спешит, не осуждает и не даёт готовых указаний</li>
+          <li>Не ставит диагнозов и не заменяет психолога или врача</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="formats">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>С чем помогает коуч</h2>
+        <p>Начните с любой темы. Если в середине разговора станет ясно, что важно другое, можно свернуть в сторону.</p>
+      </div>
+      <div class="menu">
+        <div class="menu-row"><h3>Тревога и напряжение</h3><span class="menu-price">5–10 минут</span>
+          <p>Когда мысли бегут по кругу и трудно собраться. Вместе разберём, что именно тревожит, и найдём способ немного успокоиться.</p></div>
+        <div class="menu-row"><h3>Сложное решение</h3><span class="menu-price">10–20 минут</span>
+          <p>Работа, отношения, переезд. Коуч поможет взвесить варианты и понять, чего вы хотите на самом деле.</p></div>
+        <div class="menu-row"><h3>Усталость и выгорание</h3><span class="menu-price">10–15 минут</span>
+          <p>Когда сил нет, а дел много. Посмотрим, что забирает энергию и что можно изменить прямо сейчас.</p></div>
+        <div class="menu-row"><h3>Границы и общение</h3><span class="menu-price">10–15 минут</span>
+          <p>Как сказать «нет», как выразить недовольство и не испортить отношения. Можно заранее проговорить трудный разговор.</p></div>
+        <div class="menu-row"><h3>Просто выговориться</h3><span class="menu-price">сколько нужно</span>
+          <p>Иногда достаточно, чтобы вас выслушали. Никаких заданий и выводов, если вы этого не хотите.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="band">
+    <div class="wrap">
+      <div class="sec-head"><h2>Как проходит разговор</h2></div>
+      <ol class="steps">
+        <li><div><h3>Запустите коуча</h3><p>Один раз нажмите кнопку: коуч загрузится в вашем браузере. Потом он будет включаться быстрее.</p></div></li>
+        <li><div><h3>Расскажите, что волнует</h3><p>Одной фразой или подробно, как удобно. Можно выбрать готовую тему.</p></div></li>
+        <li><div><h3>Отвечайте на вопросы</h3><p>Коуч уточняет и возвращает вам ваши же мысли, чтобы вы видели их яснее.</p></div></li>
+        <li><div><h3>Выберите маленький шаг</h3><p>Договоритесь о том, что сделаете сегодня. Больше ничего не нужно.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="assistant">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Разговор с коучем</h2>
+        <p>Переписка остаётся на вашем устройстве и никуда не отправляется.</p>
+      </div>
+
+      <div class="assistant">
+        <div class="notice">Коуч — это программа, а не психолог. Он не ставит диагнозов и не заменяет живого специалиста.</div>
+
+        <div class="setup" id="setup">
+          <div class="row">
+            <button class="btn" id="startBtn" type="button">Запустить коуча</button>
+          </div>
+          <details>
+            <summary>Что понадобится</summary>
+            <p style="margin-top:8px">Компьютер с современным Chrome или Edge и видеокартой с поддержкой WebGPU, а также несколько гигабайт свободного места и видеопамяти. Первый запуск занимает несколько минут, потом коуч включается из кэша браузера.</p>
+          </details>
+          <div class="bar" id="bar"><i id="fill"></i></div>
+          <div class="status" id="status" role="status"></div>
+        </div>
+
+        <div id="chatBox">
+          <div id="log" aria-live="polite"></div>
+          <div class="starters" id="starters">
+            <button type="button">Мне тревожно, не могу собраться</button>
+            <button type="button">Помоги разобраться с решением</button>
+            <button type="button">Хочу выговориться</button>
+          </div>
+          <form id="form">
+            <textarea id="input" rows="1" placeholder="Напишите, что у вас на душе" aria-label="Сообщение"></textarea>
+            <button class="btn" id="send" type="submit">Отправить</button>
+            <button class="btn ghost" id="stop" type="button" hidden>Стоп</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="band">
+    <div class="wrap faq">
+      <div class="sec-head"><h2>Частые вопросы</h2></div>
+      <details><summary>Мои сообщения кто-то видит?</summary><p>Нет. Коуч работает прямо в вашем браузере, переписка никуда не отправляется и пропадает, когда вы закрываете страницу.</p></details>
+      <details><summary>Чем коучинг отличается от психотерапии?</summary><p>Коучинг работает с целями и решениями. Психотерапия лечит и работает с глубокими травмами и расстройствами. Если вам нужна помощь врача или психолога, обратитесь к специалисту.</p></details>
+      <details><summary>Сколько нужно разговаривать?</summary><p>Столько, сколько вам полезно. Для одного вопроса обычно хватает 10–15 минут.</p></details>
+      <details><summary>Можно ли писать коучу, если мне очень плохо?</summary><p>Коуч подходит для повседневных переживаний. Если вам очень тяжело или вы думаете о том, чтобы причинить себе вред, обратитесь к близкому человеку или в экстренную службу вашей страны.</p></details>
+      <details><summary>Коуч иногда ошибается или отвечает странно. Почему?</summary><p>Это нормально для программы. Относитесь к его ответам как к идеям для размышления, а не как к указаниям.</p></details>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Остались вопросы?</h2>
+      <p class="lead" style="margin-top:14px">Напишите нам, и мы ответим в течение дня.</p>
+      <div class="actions">
+        <a class="btn" href="mailto:hello@example.com">Написать на почту</a>
+        <a class="btn ghost" href="https://t.me/your_username">Написать в Telegram</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="crisis">Если вам сейчас очень тяжело или вы думаете о том, чтобы причинить себе вред, не оставайтесь одни. Позвоните близкому человеку или в экстренную службу вашей страны (во многих странах это 112).</div>
+    <div>© Тихая гавань. Сервис не является медицинской или психотерапевтической услугой.</div>
+  </div>
+</footer>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Разговор с коучем — Тихая гавань</title>
+<meta name="description" content="Отдельная страница для разговора с ИИ-коучем.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Prata&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="chat-page">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Тихая гавань</a>
+    <a class="btn ghost" href="index.html">← На главную</a>
+  </div>
+</header>
+
+<main class="chat-main">
+  <div class="wrap chat-wrap">
+    <div class="assistant chat-full">
+      <div class="notice">Коуч — это программа, а не психолог. Он не ставит диагнозов и не заменяет живого специалиста. Переписка остаётся на вашем устройстве.</div>
+
+      <div class="setup" id="setup">
+        <div class="row">
+          <button class="btn" id="startBtn" type="button">Запустить коуча</button>
+        </div>
+        <details>
+          <summary>Что понадобится</summary>
+          <p style="margin-top:8px">Компьютер с современным Chrome или Edge и видеокартой с поддержкой WebGPU, а также несколько гигабайт свободного места и видеопамяти. Первый запуск занимает несколько минут, потом коуч включается из кэша браузера и без интернета.</p>
+        </details>
+        <div class="bar" id="bar"><i id="fill"></i></div>
+        <div class="status" id="status" role="status"></div>
+      </div>
+
+      <div id="chatBox">
+        <div id="log" aria-live="polite"></div>
+        <div class="starters" id="starters">
+          <button type="button">Мне тревожно, не могу собраться</button>
+          <button type="button">Помоги разобраться с решением</button>
+          <button type="button">Хочу выговориться</button>
+        </div>
+        <form id="form">
+          <textarea id="input" rows="1" placeholder="Напишите, что у вас на душе" aria-label="Сообщение"></textarea>
+          <button class="btn" id="send" type="submit">Отправить</button>
+          <button class="btn ghost" id="stop" type="button" hidden>Стоп</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="chat-footer">
+  <div class="wrap">
+    <div class="crisis">Если вам сейчас очень тяжело или вы думаете о том, чтобы причинить себе вред, не оставайтесь одни. Позвоните близкому человеку или в экстренную службу вашей страны (во многих странах это 112).</div>
+  </div>
+</footer>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

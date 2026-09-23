@@ -170,3 +170,15 @@ section { padding: 84px 0; }
 footer { padding: 36px 0 48px; border-top: 1px solid var(--line); font-size: .92rem; color: var(--muted); }
 footer .wrap { display: grid; gap: 10px; }
 .crisis { color: var(--ink); background: var(--peach); border-radius: 12px; padding: 14px 18px; }
+/* ---------- Отдельная страница чата ---------- */
+.chat-page { display: flex; flex-direction: column; min-height: 100vh; }
+.chat-main { flex: 1; display: flex; padding: 24px 0; }
+.chat-wrap { display: flex; flex: 1; }
+.chat-full {
+  flex: 1; display: flex; flex-direction: column;
+  max-width: 720px; margin-inline: auto; width: 100%;
+}
+.chat-full #chatBox { flex: 1; }
+.chat-full #log { height: auto; flex: 1; min-height: 320px; }
+.chat-footer { padding: 0 0 calc(20px + env(safe-area-inset-bottom, 0px)); }
+.chat-footer .wrap { padding-top: 16px; }

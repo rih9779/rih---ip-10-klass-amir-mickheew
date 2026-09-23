@@ -13,6 +13,7 @@ if (navigator.storage && navigator.storage.persist) {
   const orb = document.getElementById("orb");
   const label = document.getElementById("breathLabel");
   const btn = document.getElementById("breathBtn");
+  if (!orb || !label ||!btn ) return;
 
   const frame = (scale, glow) => ({
     transform: "scale(" + scale + ")",
@@ -123,7 +124,7 @@ els.start.addEventListener("click", async () => {
   } else {
     addMsg("bot",
       res.reason +
-      "\n\nПоэтому сейчас работает простой режим: это не нейросеть, а набор заготовленных вопросов. " +
+      "\n\n Поэтому сейчас работает простой режим: это не нейросеть, а набор заготовленных вопросов. " +
       "Он тоже помогает разложить мысли, но отвечает проще.\n\n" + coach.greeting());
   }
   els.input.focus();
